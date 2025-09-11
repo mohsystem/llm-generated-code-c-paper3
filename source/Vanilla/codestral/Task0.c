@@ -1,0 +1,1 @@
+/* C code is not supported for this task as it does not have built-in support for concurrent programming and file processing. */

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskZeroShotgemini169.a CMakeFiles/taskZeroShotgemini169.dir/source/ZeroShot/gemini/Task169.c.o
+/usr/bin/ranlib libtaskZeroShotgemini169.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskZeroShotllama3133.a CMakeFiles/taskZeroShotllama3133.dir/source/ZeroShot/llama31/Task33.c.o
+/usr/bin/ranlib libtaskZeroShotllama3133.a

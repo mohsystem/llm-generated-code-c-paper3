@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskVanillagpt4o145.a CMakeFiles/taskVanillagpt4o145.dir/source/Vanilla/gpt4o/Task145.c.o
+/usr/bin/ranlib libtaskVanillagpt4o145.a

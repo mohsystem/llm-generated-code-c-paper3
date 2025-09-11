@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskcotclaude143.a CMakeFiles/taskcotclaude143.dir/source/CoT/claude/Task143.c.o
+/usr/bin/ranlib libtaskcotclaude143.a

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/llm_generated_code_c_paper2.dir/source/CoT/claude/Task0.c.o -o llm_generated_code_c_paper2 

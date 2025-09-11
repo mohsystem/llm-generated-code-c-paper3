@@ -1,0 +1,216 @@
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task46.c:52:6:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Khash_password[m[K’; have ‘[01m[Kvoid(const char *, char *)[m[K’
+   52 | void [01;31m[Khash_password[m[K(const char* password, char* hashed_password) {
+      |      [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/kali/.vcpkg-clion/vcpkg/installed/x64-linux/include/mysql/mysql.h:80[m[K,
+                 from [01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task46.c:5[m[K:
+[01m[K/home/kali/.vcpkg-clion/vcpkg/installed/x64-linux/include/mysql/mysql_com.h:1137:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Khash_password[m[K’ with type ‘[01m[Kvoid(long unsigned int *, const char *, unsigned int)[m[K’
+ 1137 | void [01;36m[Khash_password[m[K(unsigned long *to, const char *password,
+      |      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:44:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kname[m[K’
+   44 |         "{\\"[01;31m[Kname[m[K\\": \\"John\\", \\"age\\": 30}",
+      |              [01;31m[K^~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:43:27:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   43 |     const char* tests[] = [01;36m[K{[m[K
+      |                           [01;36m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:44:18:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   44 |         "{\\"name[01;31m[K\[m[K\": \\"John\\", \\"age\\": 30}",
+      |                  [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:44:19:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   44 |         "{\\"name\[01;31m[K\[m[K": \\"John\\", \\"age\\": 30}",
+      |                   [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:44:30:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   44 |         "{\\"name\\": \\"John[01;31m[K\[m[K\", \\"age\\": 30}",
+      |                              [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:44:31:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   44 |         "{\\"name\\": \\"John\[01;31m[K\[m[K", \\"age\\": 30}",
+      |                               [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:44:41:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   44 |         "{\\"name\\": \\"John\\", \\"age[01;31m[K\[m[K\": 30}",
+      |                                         [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:44:42:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   44 |         "{\\"name\\": \\"John\\", \\"age\[01;31m[K\[m[K": 30}",
+      |                                          [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:46:24:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   46 |         "\\"Hello World[01;31m[K\[m[K\"",
+      |                        [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task62.c:46:25:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   46 |         "\\"Hello World\[01;31m[K\[m[K"",
+      |                         [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task67.c:[m[K In function ‘[01m[Kget_customer_info[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task67.c:99:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kbind_[m[K’ undeclared (first use in this function)
+   99 |     memset(bind_result, 0, sizeof([01;31m[Kbind_[m[K', type='text')
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task67.c:99:35:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task67.c:99:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before '\x7970653d'
+   99 |     memset(bind_result, 0, sizeof[34m[K([m[Kbind_[01;31m[K'[m[K[32m[K, type='[m[Ktext')
+      |                                  [34m[K~[m[K     [01;31m[K^[m[K[32m[K~~~~~~~~[m[K
+      |                                        [32m[K)[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task67.c:99:53:[m[K [01;31m[Kerror: [m[Kmissing terminating ' character
+   99 |     memset(bind_result, 0, sizeof(bind_', type='text[01;31m[K')[m[K
+      |                                                     [01;31m[K^~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task67.c:99:5:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+   99 |     [01;31m[Kmemset[m[K(bind_result, 0, sizeof(bind_', type='text')
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task68.c:[m[K In function ‘[01m[Ksearch_ldap[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task68.c:143:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kldap_unbin[m[K’ undeclared (first use in this function)
+  143 |     [01;31m[Kldap_unbin[m[K', type='text')
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task68.c:143:5:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task68.c:143:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before '\x7970653d'
+  143 |     ldap_unbin[01;31m[K'[m[K[32m[K, type='[m[Ktext')
+      |               [01;31m[K^[m[K[32m[K~~~~~~~~[m[K
+      |               [32m[K;[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task68.c:143:28:[m[K [01;31m[Kerror: [m[Kmissing terminating ' character
+  143 |     ldap_unbin', type='text[01;31m[K')[m[K
+      |                            [01;31m[K^~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task68.c:143:5:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+  143 |     [01;31m[Kldap_unbin[m[K', type='text')
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task77.c:[m[K In function ‘[01m[Kdownload_from_ftp[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task77.c:100:47:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "curl_easy_setopt"
+  100 |     curl_easy_setopt(curl, CURL', type='text')
+      |                                               [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task77.c:100:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of input
+  100 |     curl_easy_setopt[01;31m[K([m[Kcurl, CURL', type='text')
+      |                     [01;31m[K^[m[K
+      |                     [32m[K;[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task77.c:100:5:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+  100 |     [01;31m[Kcurl_easy_setopt[m[K(curl, CURL', type='text')
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task77.c:88:9:[m[K [01;31m[Kerror: [m[Klabel ‘[01m[Kcleanup[m[K’ used but not defined
+   88 |         [01;31m[Kgoto[m[K cleanup;
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:61:21:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+   61 |     sprintf(goodbye,[01;31m[K [m[K[32m[K"%s has left the chat!\\n"[m[K, name);
+      |                     [01;31m[K^[m[K[32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[K)[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:62:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kbroadcast_message[m[K’; have ‘[01m[Kint()[m[K’
+   62 |     [01;31m[Kbroadcast_message[m[K(goodbye, client_socket);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:24:6:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kbroadcast_message[m[K’ with type ‘[01m[Kvoid(char *, int)[m[K’
+   24 | void [01;36m[Kbroadcast_message[m[K(char *message, int sender_socket) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:64:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kremove_client[m[K’; have ‘[01m[Kint()[m[K’
+   64 |     [01;31m[Kremove_client[m[K(client_socket);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:34:6:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kremove_client[m[K’ with type ‘[01m[Kvoid(int)[m[K’
+   34 | void [01;36m[Kremove_client[m[K(int socket) {
+      |      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:66:5:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kfree[m[K’; have ‘[01m[Kint()[m[K’
+   66 |     [01;31m[Kfree[m[K(arg);
+      |     [01;31m[K^~~~[m[K
+In file included from [01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:3[m[K:
+[01m[K/usr/include/stdlib.h:687:13:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kfree[m[K’ with type ‘[01m[Kvoid(void *)[m[K’
+  687 | extern void [01;36m[Kfree[m[K (void *__ptr) __THROW;
+      |             [01;36m[K^~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:67:5:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kreturn[m[K’
+   67 |     [01;31m[Kreturn[m[K NULL;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task90.c:68:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+   68 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task102.c:26:6:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Khash_password[m[K’; have ‘[01m[Kvoid(const char *, char *, size_t)[m[K’ {aka ‘[01m[Kvoid(const char *, char *, long unsigned int)[m[K’}
+   26 | void [01;31m[Khash_password[m[K(const char* password, char* hashed, size_t hashed_size) {
+      |      [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/kali/.vcpkg-clion/vcpkg/installed/x64-linux/include/mysql/mysql.h:80[m[K,
+                 from [01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task102.c:5[m[K:
+[01m[K/home/kali/.vcpkg-clion/vcpkg/installed/x64-linux/include/mysql/mysql_com.h:1137:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Khash_password[m[K’ with type ‘[01m[Kvoid(long unsigned int *, const char *, unsigned int)[m[K’
+ 1137 | void [01;36m[Khash_password[m[K(unsigned long *to, const char *password,
+      |      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task107.c:[m[K In function ‘[01m[Kis_valid_input[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task107.c:18:43:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   18 |     const char* invalid_chars = ";,=+<>\\"[01;31m[K\[m[K\\\";\n    while (*invalid_chars) {\n        if (strchr(input, *invalid_chars)) {\n            return 0;\n        }\n        invalid_chars++;\n    }\n    return 1;\n}\n\n// Function to perform LDAP lookup\nint perform_ldap_lookup(const char* ldap_uri, const char* search_base, const char* search_filter) {\n    LDAP* ld = NULL;\n    int success = 0;\n    int rc;\n    \n    // Validate inputs\n    if (!is_valid_input(search_base) || !is_valid_input(search_filter)) {\n        fprintf(stderr, "Invalid search parameters\
+      |                                           [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task107.c:18:44:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   18 |     const char* invalid_chars = ";,=+<>\\"\[01;31m[K\[m[K\\";\n    while (*invalid_chars) {\n        if (strchr(input, *invalid_chars)) {\n            return 0;\n        }\n        invalid_chars++;\n    }\n    return 1;\n}\n\n// Function to perform LDAP lookup\nint perform_ldap_lookup(const char* ldap_uri, const char* search_base, const char* search_filter) {\n    LDAP* ld = NULL;\n    int success = 0;\n    int rc;\n    \n    // Validate inputs\n    if (!is_valid_input(search_base) || !is_valid_input(search_filter)) {\n        fprintf(stderr, "Invalid search parameters\
+      |                                            [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task107.c:18:45:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   18 |     const char* invalid_chars = ";,=+<>\\"\\[01;31m[K\[m[K\";\n    while (*invalid_chars) {\n        if (strchr(input, *invalid_chars)) {\n            return 0;\n        }\n        invalid_chars++;\n    }\n    return 1;\n}\n\n// Function to perform LDAP lookup\nint perform_ldap_lookup(const char* ldap_uri, const char* search_base, const char* search_filter) {\n    LDAP* ld = NULL;\n    int success = 0;\n    int rc;\n    \n    // Validate inputs\n    if (!is_valid_input(search_base) || !is_valid_input(search_filter)) {\n        fprintf(stderr, "Invalid search parameters\
+      |                                             [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task107.c:18:46:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   18 |     const char* invalid_chars = ";,=+<>\\"\\\[01;31m[K\[m[K";\n    while (*invalid_chars) {\n        if (strchr(input, *invalid_chars)) {\n            return 0;\n        }\n        invalid_chars++;\n    }\n    return 1;\n}\n\n// Function to perform LDAP lookup\nint perform_ldap_lookup(const char* ldap_uri, const char* search_base, const char* search_filter) {\n    LDAP* ld = NULL;\n    int success = 0;\n    int rc;\n    \n    // Validate inputs\n    if (!is_valid_input(search_base) || !is_valid_input(search_filter)) {\n        fprintf(stderr, "Invalid search parameters\
+      |                                              [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task107.c:18:538:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[KInvalid[m[K’
+   18 |     const char* invalid_chars = ";,=+<>\\"\\\\";\n    while (*invalid_chars) {\n        if (strchr(input, *invalid_chars)) {\n            return 0;\n        }\n        invalid_chars++;\n    }\n    return 1;\n}\n\n// Function to perform LDAP lookup\nint perform_ldap_lookup(const char* ldap_uri, const char* search_base, const char* search_filter) {\n    LDAP* ld = NULL;\n    int success = 0;\n    int rc;\n    \n    // Validate inputs\n    if (!is_valid_input(search_base) || !is_valid_input(search_filter)) {\n        fprintf(stderr, "[01;31m[KInvalid[m[K search parameters\
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task117.c:7:10:[m[K [01;31m[Kfatal error: [m[Kminizip/unzip.h: No such file or directory
+    7 | #include [01;31m[K<minizip/unzip.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task119.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task119.c:147:20:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+  147 |     fprintf(file1, [01;31m[K"name,age,city', type='text')[m[K
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task119.c:147:5:[m[K [01;31m[Kerror: [m[Kexpected expression at end of input
+  147 |     [01;31m[Kfprintf[m[K(file1, "name,age,city', type='text')
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task119.c:147:5:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task120.c:[m[K In function ‘[01m[KsanitizeInput[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task120.c:35:22:[m[K [01;31m[Kerror: [m[Kmissing terminating ' character
+   35 |             case '\\'[01;31m[K':[m[K
+      |                      [01;31m[K^~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task120.c:36:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kstrcpy[m[K’
+   36 |                 [01;31m[Kstrcpy[m[K(&output[j], "&#x27;");
+      |                 [01;31m[K^~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task120.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task120.c:73:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[KTest[m[K’
+   73 |         "Quote\\"[01;31m[KTest[m[K",
+      |                  [01;31m[K^~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task120.c:69:32:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   69 |     const char* testInputs[] = [01;36m[K{[m[K
+      |                                [01;36m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task120.c:73:22:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   73 |         "Quote\\"Test[01;31m[K",[m[K
+      |                      [01;31m[K^~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task122.c:[m[K In function ‘[01m[Ksignup[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task122.c:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktry[m[K’ undeclared (first use in this function)
+   39 |     [01;31m[Ktry[m[K {
+      |     [01;31m[K^~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task122.c:39:5:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task122.c:39:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+   39 |     try[01;31m[K [m[K[32m[K{[m[K
+      |        [01;31m[K^[m[K[32m[K~[m[K
+      |        [32m[K;[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:[m[K In function ‘[01m[KisValidFileName[m[K’:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:87:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {[01;31m[K\[m[Kn        return 0;\n    }\n    \n    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                       [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:88:[m[K [01;31m[Kerror: [m[K‘[01m[Kn[m[K’ undeclared (first use in this function)
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {\[01;31m[Kn[m[K        return 0;\n    }\n    \n    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                        [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:88:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:89:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {\n[01;31m[K [m[K       [32m[Kreturn[m[K 0;\n    }\n    \n    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                         [01;31m[K^[m[K       [32m[K~~~~~~[m[K
+      |                                                                                         [32m[K;[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:106:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {\n        return 0;[01;31m[K\[m[Kn    }\n    \n    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                                          [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:108:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {\n        return 0;\n[01;31m[K [m[K   [32m[K}[m[K\n    \n    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                                            [01;31m[K^[m[K   [32m[K~[m[K
+      |                                                                                                            [32m[K;[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:113:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {\n        return 0;\n    }[01;31m[K\[m[Kn    \n    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                                                 [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:119:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {\n        return 0;\n    }\n    [01;31m[K\[m[Kn    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                                                       [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:34:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kn[m[K’
+   34 |     if (strstr(fileName, "..") || strchr(fileName, '/') || strchr(fileName, '\\\\')) {\n        return 0;\n    }\n[01;31m[K [m[K   \[32m[Kn[m[K    // Check for valid characters\n    while (*fileName) {\n        if (!isalnum(*fileName) && *fileName != '.' && *fileName != '_' && *fileName != '-') {
+      |                                                                                                                   [01;31m[K^[m[K    [32m[K~[m[K
+      |                                                                                                                   [32m[K;[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:[m[K At top level:
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:37:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K=[m[K’, ‘[01m[K,[m[K’, ‘[01m[K;[m[K’, ‘[01m[Kasm[m[K’ or ‘[01m[K__attribute__[m[K’ before ‘[01m[K++[m[K’ token
+   37 |         fileName[01;31m[K++[m[K;
+      |                 [01;31m[K^~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:38:5:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+   38 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:40:5:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kreturn[m[K’
+   40 |     [01;31m[Kreturn[m[K 1;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task129.c:41:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+   41 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K

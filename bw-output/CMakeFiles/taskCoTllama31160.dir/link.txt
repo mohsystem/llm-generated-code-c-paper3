@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskCoTllama31160.a CMakeFiles/taskCoTllama31160.dir/source/CoT/llama31/Task160.c.o
+/usr/bin/ranlib libtaskCoTllama31160.a

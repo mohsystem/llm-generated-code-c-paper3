@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskCoTgpt4o114.a CMakeFiles/taskCoTgpt4o114.dir/source/CoT/gpt4o/Task114.c.o
+/usr/bin/ranlib libtaskCoTgpt4o114.a

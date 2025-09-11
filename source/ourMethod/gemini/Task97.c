@@ -1,0 +1,1 @@
+//  Comment: C does not have built-in XML or XPath support.  Implementing it would require significant code and external libraries.

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskVanillallama3175.a CMakeFiles/taskVanillallama3175.dir/source/Vanilla/llama31/Task75.c.o
+/usr/bin/ranlib libtaskVanillallama3175.a

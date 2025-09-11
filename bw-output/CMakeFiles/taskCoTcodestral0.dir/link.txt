@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskCoTcodestral0.a CMakeFiles/taskCoTcodestral0.dir/source/CoT/codestral/Task0.c.o
+/usr/bin/ranlib libtaskCoTcodestral0.a

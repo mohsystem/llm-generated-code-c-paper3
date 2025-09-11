@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskVanillagemini167.a CMakeFiles/taskVanillagemini167.dir/source/Vanilla/gemini/Task167.c.o
+/usr/bin/ranlib libtaskVanillagemini167.a

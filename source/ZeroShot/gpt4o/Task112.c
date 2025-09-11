@@ -1,0 +1,1 @@
+// C language does not have a direct MongoDB client. It is typically accessed through external libraries or using other languages.

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskourMethodclaude60.a CMakeFiles/taskourMethodclaude60.dir/source/ourMethod/claude/Task60.c.o
+/usr/bin/ranlib libtaskourMethodclaude60.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskZeroShotcodestral49.a CMakeFiles/taskZeroShotcodestral49.dir/source/ZeroShot/codestral/Task49.c.o
+/usr/bin/ranlib libtaskZeroShotcodestral49.a

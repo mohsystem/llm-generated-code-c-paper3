@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskCoTgemini113.a CMakeFiles/taskCoTgemini113.dir/source/CoT/gemini/Task113.c.o
+/usr/bin/ranlib libtaskCoTgemini113.a

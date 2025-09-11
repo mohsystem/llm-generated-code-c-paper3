@@ -1,0 +1,1 @@
+// C code cannot be provided as it typically requires external libraries for HTTP requests and HTML parsing, which are not feasible to execute within a single file.

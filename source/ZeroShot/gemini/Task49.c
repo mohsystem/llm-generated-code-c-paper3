@@ -1,0 +1,2 @@
+// Not applicable for C as it is not well-suited for creating API endpoints and interacting with databases in the same way C++ and other languages can.
+/*  This requires HTTP libraries and database connectors, which are better managed with C++'s object-oriented features.*/

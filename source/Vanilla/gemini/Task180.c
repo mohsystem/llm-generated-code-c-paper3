@@ -1,0 +1,1 @@
+//  Not applicable in C as there is no easy way to represent and return nested data structures like dictionaries/maps used in this problem.

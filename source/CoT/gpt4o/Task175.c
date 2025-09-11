@@ -1,0 +1,1 @@
+// C code cannot be provided as it requires object-oriented programming concepts like interfaces which are not directly supported in C.

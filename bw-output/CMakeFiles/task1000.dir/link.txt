@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtask1000.a CMakeFiles/task1000.dir/source/CoT/codestral/Task0.c.o CMakeFiles/task1000.dir/source/CoT/claude/Task0.c.o
+/usr/bin/ranlib libtask1000.a

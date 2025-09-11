@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskourMethodcodestral53.a CMakeFiles/taskourMethodcodestral53.dir/source/ourMethod/codestral/Task53.c.o
+/usr/bin/ranlib libtaskourMethodcodestral53.a

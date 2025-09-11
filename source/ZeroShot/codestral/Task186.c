@@ -1,0 +1,1 @@
+// C solution is not provided as it's quite complex and requires advanced concepts of C language such as dynamic memory allocation and struct handling. It's not common to write such complex solutions in C as compared to higher-level languages like Java, Python, and C++.

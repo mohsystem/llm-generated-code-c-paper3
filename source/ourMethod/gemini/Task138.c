@@ -1,0 +1,2 @@
+//  Implementation in C is more complex and requires manual memory management for dynamic data structures.  It is not recommended for this particular task due to the complexity and potential for security vulnerabilities if not handled precisely. 
+// Consider using C++ if C-like syntax is required, as it offers better memory management and data structure support through the standard library.

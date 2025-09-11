@@ -1,0 +1,3 @@
+//  C implementation is complex due to the need for dynamic memory allocation and manual implementation of priority queue. 
+//  It is recommended to use C++ for graph algorithms due to its STL support for these data structures.
+//  For a simple C implementation, consider using an adjacency matrix representation for the graph and a simpler shortest path algorithm like BFS if the graph is unweighted.

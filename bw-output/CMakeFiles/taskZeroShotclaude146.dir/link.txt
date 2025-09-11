@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskZeroShotclaude146.a CMakeFiles/taskZeroShotclaude146.dir/source/ZeroShot/claude/Task146.c.o
+/usr/bin/ranlib libtaskZeroShotclaude146.a

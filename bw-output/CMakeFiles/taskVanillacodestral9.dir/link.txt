@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskVanillacodestral9.a CMakeFiles/taskVanillacodestral9.dir/source/Vanilla/codestral/Task9.c.o
+/usr/bin/ranlib libtaskVanillacodestral9.a

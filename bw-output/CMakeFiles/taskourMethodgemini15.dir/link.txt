@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskourMethodgemini15.a CMakeFiles/taskourMethodgemini15.dir/source/ourMethod/gemini/Task15.c.o
+/usr/bin/ranlib libtaskourMethodgemini15.a

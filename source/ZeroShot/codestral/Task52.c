@@ -1,0 +1,2 @@
+// C implementation of the above approach is not provided as C does not have built-in support for encryption libraries.
+// It's recommended to use OpenSSL or other third-party libraries for encryption in C.

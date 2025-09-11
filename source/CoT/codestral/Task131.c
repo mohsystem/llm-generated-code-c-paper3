@@ -1,0 +1,2 @@
+// Not possible to provide a secure deserialization function in C, as it does not have built-in support for deserialization.
+// Also, C does not have exception handling, which makes it difficult to handle errors gracefully.

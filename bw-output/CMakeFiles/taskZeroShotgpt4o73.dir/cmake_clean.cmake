@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/taskZeroShotgpt4o73.dir/source/ZeroShot/gpt4o/Task73.c.o"
+  "CMakeFiles/taskZeroShotgpt4o73.dir/source/ZeroShot/gpt4o/Task73.c.o.d"
+  "libtaskZeroShotgpt4o73.a"
+  "libtaskZeroShotgpt4o73.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/taskZeroShotgpt4o73.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

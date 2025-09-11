@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/taskVanillagpt4o154.dir/source/Vanilla/gpt4o/Task154.c.o"
+  "CMakeFiles/taskVanillagpt4o154.dir/source/Vanilla/gpt4o/Task154.c.o.d"
+  "libtaskVanillagpt4o154.a"
+  "libtaskVanillagpt4o154.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/taskVanillagpt4o154.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

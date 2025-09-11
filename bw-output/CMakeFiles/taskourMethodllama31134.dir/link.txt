@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskourMethodllama31134.a CMakeFiles/taskourMethodllama31134.dir/source/ourMethod/llama31/Task134.c.o
+/usr/bin/ranlib libtaskourMethodllama31134.a

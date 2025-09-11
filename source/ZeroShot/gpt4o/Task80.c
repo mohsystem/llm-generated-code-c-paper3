@@ -1,0 +1,1 @@
+// SSL client socket implementation is not supported natively in C without external libraries like OpenSSL.

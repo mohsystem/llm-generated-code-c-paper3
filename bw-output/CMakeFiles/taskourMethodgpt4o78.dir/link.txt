@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskourMethodgpt4o78.a CMakeFiles/taskourMethodgpt4o78.dir/source/ourMethod/gpt4o/Task78.c.o
+/usr/bin/ranlib libtaskourMethodgpt4o78.a

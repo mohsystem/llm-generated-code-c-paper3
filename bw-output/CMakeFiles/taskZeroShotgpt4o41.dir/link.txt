@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtaskZeroShotgpt4o41.a CMakeFiles/taskZeroShotgpt4o41.dir/source/ZeroShot/gpt4o/Task41.c.o
+/usr/bin/ranlib libtaskZeroShotgpt4o41.a
