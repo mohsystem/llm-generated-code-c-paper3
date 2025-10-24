@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskVanillaclaude55.a CMakeFiles/taskVanillaclaude55.dir/source/Vanilla/claude/Task55.c.o
+/usr/bin/ar qc libtaskVanillaclaude55.a CMakeFiles/taskVanillaclaude55.dir/source/Vanilla/CLAUDE/Task55.c.o
 /usr/bin/ranlib libtaskVanillaclaude55.a

@@ -1,0 +1,1 @@
+// Unable to provide a compliant, single-file C implementation with strong cryptography and secure randomness without external dependencies.

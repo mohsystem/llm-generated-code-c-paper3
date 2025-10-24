@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskVanillagemini37.a CMakeFiles/taskVanillagemini37.dir/source/Vanilla/gemini/Task37.c.o
+/usr/bin/ar qc libtaskVanillagemini37.a CMakeFiles/taskVanillagemini37.dir/source/Vanilla/GEMINI/Task37.c.o
 /usr/bin/ranlib libtaskVanillagemini37.a

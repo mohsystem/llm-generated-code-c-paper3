@@ -1,1 +1,0 @@
-// Due to the complexity and the need for external libraries, this is not practical in pure C.

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskZeroShotgemini2.dir/source/ZeroShot/gemini/Task2.c.o"
-  "CMakeFiles/taskZeroShotgemini2.dir/source/ZeroShot/gemini/Task2.c.o.d"
+  "CMakeFiles/taskZeroShotgemini2.dir/source/ZeroShot/GEMINI/Task2.c.o"
+  "CMakeFiles/taskZeroShotgemini2.dir/source/ZeroShot/GEMINI/Task2.c.o.d"
   "libtaskZeroShotgemini2.a"
   "libtaskZeroShotgemini2.pdb"
 )

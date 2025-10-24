@@ -1,1 +1,0 @@
-// Comment: C implementation requires external libraries like libzip and libarchive, which makes it more complex to provide a self-contained example within this format.  For C, using system calls to execute dedicated archive utilities (like "unzip" or "tar") might be a more practical approach.

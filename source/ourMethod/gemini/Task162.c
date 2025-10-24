@@ -1,3 +1,0 @@
-// Dijkstra's algorithm in C is more complex due to the lack of built-in data structures like priority queues and hashmaps.  An implementation would require implementing these structures manually, increasing the code size significantly. For this reason, I am including a comment here.
-
-/*  Dijkstra's algorithm in C requires manual implementation of priority queue and hashmap-like structures, which is beyond the scope of a concise code example. */

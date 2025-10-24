@@ -1,1 +1,0 @@
-// C code is not provided because web scraping requires external libraries like libcurl, and parsing libraries, which cannot be included in a single file without external dependencies. Additionally, database operations require setting up a connection to a database like SQLite or MySQL.

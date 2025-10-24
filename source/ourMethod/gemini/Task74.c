@@ -1,1 +1,0 @@
-// Comment:  C does not have built-in support for PostgreSQL connections. You would need to use a library like libpq.

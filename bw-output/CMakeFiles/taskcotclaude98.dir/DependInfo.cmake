@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task98.c" "CMakeFiles/taskcotclaude98.dir/source/CoT/claude/Task98.c.o" "gcc" "CMakeFiles/taskcotclaude98.dir/source/CoT/claude/Task98.c.o.d"
+  "/home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/CLAUDE/Task98.c" "CMakeFiles/taskcotclaude98.dir/source/CoT/CLAUDE/Task98.c.o" "gcc" "CMakeFiles/taskcotclaude98.dir/source/CoT/CLAUDE/Task98.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

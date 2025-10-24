@@ -1,0 +1,1 @@
+// Unable to provide a secure C implementation without external vetted cryptography libraries for password hashing (e.g., OpenSSL/libsodium).

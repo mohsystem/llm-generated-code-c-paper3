@@ -1,1 +1,0 @@
-// C version is not provided due to complexity and lack of built-in threading libraries

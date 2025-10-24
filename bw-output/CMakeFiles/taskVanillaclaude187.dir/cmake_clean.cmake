@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskVanillaclaude187.dir/source/Vanilla/claude/Task187.c.o"
-  "CMakeFiles/taskVanillaclaude187.dir/source/Vanilla/claude/Task187.c.o.d"
+  "CMakeFiles/taskVanillaclaude187.dir/source/Vanilla/CLAUDE/Task187.c.o"
+  "CMakeFiles/taskVanillaclaude187.dir/source/Vanilla/CLAUDE/Task187.c.o.d"
   "libtaskVanillaclaude187.a"
   "libtaskVanillaclaude187.pdb"
 )

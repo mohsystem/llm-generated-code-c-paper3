@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskZeroShotgpt4o83.a CMakeFiles/taskZeroShotgpt4o83.dir/source/ZeroShot/gpt4o/Task83.c.o
+/usr/bin/ar qc libtaskZeroShotgpt4o83.a CMakeFiles/taskZeroShotgpt4o83.dir/source/ZeroShot/OPENAI/Task83.c.o
 /usr/bin/ranlib libtaskZeroShotgpt4o83.a

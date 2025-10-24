@@ -1,0 +1,1 @@
+// A complete, single-file, dependency-free web application is not feasible in standard C.

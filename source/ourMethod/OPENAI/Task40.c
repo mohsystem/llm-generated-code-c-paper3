@@ -1,0 +1,1 @@
+// Unable to provide a full web application with CSRF protection in a single self-contained C source file within the given constraints.

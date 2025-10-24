@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/CLionProjects/llm_generated_code_c_paper2/source/ZeroShot/claude/Task32.c" "CMakeFiles/taskZeroShotclaude32.dir/source/ZeroShot/claude/Task32.c.o" "gcc" "CMakeFiles/taskZeroShotclaude32.dir/source/ZeroShot/claude/Task32.c.o.d"
+  "/home/kali/CLionProjects/llm_generated_code_c_paper3/source/ZeroShot/CLAUDE/Task32.c" "CMakeFiles/taskZeroShotclaude32.dir/source/ZeroShot/CLAUDE/Task32.c.o" "gcc" "CMakeFiles/taskZeroShotclaude32.dir/source/ZeroShot/CLAUDE/Task32.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

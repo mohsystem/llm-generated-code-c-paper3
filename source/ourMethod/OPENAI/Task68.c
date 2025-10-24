@@ -1,0 +1,1 @@
+// LDAP client implementation not provided in C for portability and dependency reasons.

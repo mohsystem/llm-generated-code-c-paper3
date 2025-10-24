@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskZeroShotgpt4o104.dir/source/ZeroShot/gpt4o/Task104.c.o"
-  "CMakeFiles/taskZeroShotgpt4o104.dir/source/ZeroShot/gpt4o/Task104.c.o.d"
+  "CMakeFiles/taskZeroShotgpt4o104.dir/source/ZeroShot/OPENAI/Task104.c.o"
+  "CMakeFiles/taskZeroShotgpt4o104.dir/source/ZeroShot/OPENAI/Task104.c.o.d"
   "libtaskZeroShotgpt4o104.a"
   "libtaskZeroShotgpt4o104.pdb"
 )

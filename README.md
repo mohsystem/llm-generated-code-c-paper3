@@ -1,4 +1,12 @@
-Change the following:
+# Updated:
+# #This will do every thing and run sonarqube:
+```
+./runSonarQube.sh
+```
+*******************************************
+
+
+Change the following in [compiler.py](compiler.py):
 
     logfile = "claude_syntax_and_compliation_cpp_log.log"  # Replace with the path to your source directory
     source_directory = "./source/output/CLAUDE_claude-3-5-sonnet-20240620/cpp"  # Replace with the path to your source directory
@@ -10,7 +18,7 @@ Then Run:
 python compiler.py
 
 
-using script on bash
+using script on bash to check the syntax
 
 for file in /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/*.c; do
     /usr/bin/cc -I/home/kali/.vcpkg-clion/vcpkg/installed/x64-linux/include \
@@ -26,13 +34,4 @@ done
 build-wrapper-linux-x86-64 --out-dir bw-output cmake --build cmake-build-debug 
 cd bw-output && cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. && cd .. && sonar-scanner
 ```
-*******************************************
-Updated:
-This will do every thing and run sonarqube:
-
-./runSonarQube.sh
-
-
-incomplete code generation due to LLM is tagged by adding the following:
-//todo    //incomplete code
 

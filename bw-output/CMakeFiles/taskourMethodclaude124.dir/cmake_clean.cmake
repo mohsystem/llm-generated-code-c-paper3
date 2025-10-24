@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskourMethodclaude124.dir/source/ourMethod/claude/Task124.c.o"
-  "CMakeFiles/taskourMethodclaude124.dir/source/ourMethod/claude/Task124.c.o.d"
+  "CMakeFiles/taskourMethodclaude124.dir/source/ourMethod/CLAUDE/Task124.c.o"
+  "CMakeFiles/taskourMethodclaude124.dir/source/ourMethod/CLAUDE/Task124.c.o.d"
   "libtaskourMethodclaude124.a"
   "libtaskourMethodclaude124.pdb"
 )

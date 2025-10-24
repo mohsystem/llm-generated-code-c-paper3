@@ -1,1 +1,0 @@
-// Unfortunately, MongoDB does not officially support a C driver.

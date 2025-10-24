@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskVanillagpt4o100.a CMakeFiles/taskVanillagpt4o100.dir/source/Vanilla/gpt4o/Task100.c.o
+/usr/bin/ar qc libtaskVanillagpt4o100.a CMakeFiles/taskVanillagpt4o100.dir/source/Vanilla/OPENAI/Task100.c.o
 /usr/bin/ranlib libtaskVanillagpt4o100.a

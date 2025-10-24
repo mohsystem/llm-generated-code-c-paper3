@@ -53,10 +53,10 @@ RM = /home/kali/workingDirectory/programs/clion-2024.1.4/bin/cmake/linux/x64/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2
+CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output
+CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output
 
 # Include any dependencies generated for this target.
 include CMakeFiles/taskcotclaude116.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/taskcotclaude116.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/taskcotclaude116.dir/flags.make
 
-CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o: CMakeFiles/taskcotclaude116.dir/flags.make
-CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task116.c
-CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o: CMakeFiles/taskcotclaude116.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o -MF CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o.d -o CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task116.c
+CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o: CMakeFiles/taskcotclaude116.dir/flags.make
+CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/CLAUDE/Task116.c
+CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o: CMakeFiles/taskcotclaude116.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o -MF CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o.d -o CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/CLAUDE/Task116.c
 
-CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task116.c > CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.i
+CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/CLAUDE/Task116.c > CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.i
 
-CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/claude/Task116.c -o CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.s
+CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/CLAUDE/Task116.c -o CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.s
 
 # Object files for target taskcotclaude116
 taskcotclaude116_OBJECTS = \
-"CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o"
+"CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o"
 
 # External object files for target taskcotclaude116
 taskcotclaude116_EXTERNAL_OBJECTS =
 
-libtaskcotclaude116.a: CMakeFiles/taskcotclaude116.dir/source/CoT/claude/Task116.c.o
+libtaskcotclaude116.a: CMakeFiles/taskcotclaude116.dir/source/CoT/CLAUDE/Task116.c.o
 libtaskcotclaude116.a: CMakeFiles/taskcotclaude116.dir/build.make
 libtaskcotclaude116.a: CMakeFiles/taskcotclaude116.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskcotclaude116.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskcotclaude116.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/taskcotclaude116.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/taskcotclaude116.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/taskcotclaude116.dir/clean:
 .PHONY : CMakeFiles/taskcotclaude116.dir/clean
 
 CMakeFiles/taskcotclaude116.dir/depend:
-	cd /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles/taskcotclaude116.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles/taskcotclaude116.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/taskcotclaude116.dir/depend
 

@@ -1,9 +1,0 @@
-
-// Note: XML and XPath processing in C requires external libraries 
-// like libxml2. Here's a simplified version showing the structure:\n\n#include <stdio.h>\n#include <libxml/parser.h>\n#include <libxml/xpath.h>\n\nchar* execute_xpath(const char* xml_file, const char* xpath) {\n    xmlDocPtr doc;\n    xmlXPathContextPtr context;\n    xmlXPathObjectPtr result;\n    static char output[1024];\n    \n    doc = xmlParseFile(xml_file);\n    if (doc == NULL) {\n        return "Error: Unable to parse XML file";\n    }\n    \n    context = xmlXPathNewContext(doc);\n    if (context == NULL) {\n        xmlFreeDoc(doc);\n        return "Error: Unable to create XPath context";\n    }\n    \n    char xpath_expr[256];\n    snprintf(xpath_expr, sizeof(xpath_expr), "//tag[@id='%s']", xpath);\n    result = xmlXPathEvalExpression((xmlChar*)xpath_expr, context);\n    \n    if (result == NULL) {\n        xmlXPathFreeContext(context);\n        xmlFreeDoc(doc);\n        return "Error: Unable to evaluate XPath expression";\n    }\n    \n    if (xmlXPathNodeSetIsEmpty(result->nodesetval)) {\n        strcpy(output, "No match found");\n    } else {\n        xmlNodePtr node = result->nodesetval->nodeTab[0];\n        xmlChar* value = xmlNodeGetContent(node);\n        snprintf(output, sizeof(output), "%s", (char*)value);\n        xmlFree(value);\n    }\n    \n    xmlXPathFreeObject(result);\n    xmlXPathFreeContext(context);\n    xmlFreeDoc(doc);\n    \n    return output;\n}\n\nint main() {\n    // Test cases\n    const char* test_xmls[] = {\n        "test1.xml", "test2.xml", "test3.xml", "test4.xml", "test5.xml"\n    };\n    const char* test_xpaths[] = {\n        "1", "2", "3", "4", "5"\n    };\n    \n    for(int i = 0; i < 5; i++) {\n        printf("Test case %d: %s\
-", i+1, 
-               execute_xpath(test_xmls[i], test_xpaths[i]));
-    }
-    
-    return 0;
-}

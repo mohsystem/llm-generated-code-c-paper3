@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskZeroShotclaude178.dir/source/ZeroShot/claude/Task178.c.o"
-  "CMakeFiles/taskZeroShotclaude178.dir/source/ZeroShot/claude/Task178.c.o.d"
+  "CMakeFiles/taskZeroShotclaude178.dir/source/ZeroShot/CLAUDE/Task178.c.o"
+  "CMakeFiles/taskZeroShotclaude178.dir/source/ZeroShot/CLAUDE/Task178.c.o.d"
   "libtaskZeroShotclaude178.a"
   "libtaskZeroShotclaude178.pdb"
 )

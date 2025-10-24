@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskVanillagemini176.dir/source/Vanilla/gemini/Task176.c.o"
-  "CMakeFiles/taskVanillagemini176.dir/source/Vanilla/gemini/Task176.c.o.d"
+  "CMakeFiles/taskVanillagemini176.dir/source/Vanilla/GEMINI/Task176.c.o"
+  "CMakeFiles/taskVanillagemini176.dir/source/Vanilla/GEMINI/Task176.c.o.d"
   "libtaskVanillagemini176.a"
   "libtaskVanillagemini176.pdb"
 )

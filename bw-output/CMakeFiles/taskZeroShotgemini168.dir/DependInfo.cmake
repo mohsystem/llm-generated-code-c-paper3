@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/CLionProjects/llm_generated_code_c_paper2/source/ZeroShot/gemini/Task168.c" "CMakeFiles/taskZeroShotgemini168.dir/source/ZeroShot/gemini/Task168.c.o" "gcc" "CMakeFiles/taskZeroShotgemini168.dir/source/ZeroShot/gemini/Task168.c.o.d"
+  "/home/kali/CLionProjects/llm_generated_code_c_paper3/source/ZeroShot/GEMINI/Task168.c" "CMakeFiles/taskZeroShotgemini168.dir/source/ZeroShot/GEMINI/Task168.c.o" "gcc" "CMakeFiles/taskZeroShotgemini168.dir/source/ZeroShot/GEMINI/Task168.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

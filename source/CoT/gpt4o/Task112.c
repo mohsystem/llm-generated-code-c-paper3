@@ -1,1 +1,0 @@
-// MongoDB C driver example is not provided due to complexity and lack of direct support in C for MongoDB

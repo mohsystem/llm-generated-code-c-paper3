@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskourMethodgemini89.a CMakeFiles/taskourMethodgemini89.dir/source/ourMethod/gemini/Task89.c.o
+/usr/bin/ar qc libtaskourMethodgemini89.a CMakeFiles/taskourMethodgemini89.dir/source/ourMethod/GEMINI/Task89.c.o
 /usr/bin/ranlib libtaskourMethodgemini89.a

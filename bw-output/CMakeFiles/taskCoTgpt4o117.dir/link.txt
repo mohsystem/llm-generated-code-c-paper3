@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskCoTgpt4o117.a CMakeFiles/taskCoTgpt4o117.dir/source/CoT/gpt4o/Task117.c.o
+/usr/bin/ar qc libtaskCoTgpt4o117.a CMakeFiles/taskCoTgpt4o117.dir/source/CoT/OPENAI/Task117.c.o
 /usr/bin/ranlib libtaskCoTgpt4o117.a

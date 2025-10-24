@@ -1,1 +1,0 @@
-/* C language does not have a built-in AES encryption library. */

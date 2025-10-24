@@ -1,0 +1,1 @@
+// Unable to provide a portable single-file C program that connects to a SQL database without non-standard external libraries.

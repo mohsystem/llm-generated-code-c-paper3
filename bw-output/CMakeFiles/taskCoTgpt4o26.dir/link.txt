@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskCoTgpt4o26.a CMakeFiles/taskCoTgpt4o26.dir/source/CoT/gpt4o/Task26.c.o
+/usr/bin/ar qc libtaskCoTgpt4o26.a CMakeFiles/taskCoTgpt4o26.dir/source/CoT/OPENAI/Task26.c.o
 /usr/bin/ranlib libtaskCoTgpt4o26.a

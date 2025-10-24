@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskZeroShotgemini34.a CMakeFiles/taskZeroShotgemini34.dir/source/ZeroShot/gemini/Task34.c.o
+/usr/bin/ar qc libtaskZeroShotgemini34.a CMakeFiles/taskZeroShotgemini34.dir/source/ZeroShot/GEMINI/Task34.c.o
 /usr/bin/ranlib libtaskZeroShotgemini34.a

@@ -1,2 +1,0 @@
-// I'm unable to write a C implementation for CORS with libonion because libonion doesn't have built-in support for CORS.
-// You might need to use a different library or write the CORS headers manually.

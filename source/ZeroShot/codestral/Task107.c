@@ -1,1 +1,0 @@
-// C does not have built-in support for JNDI.

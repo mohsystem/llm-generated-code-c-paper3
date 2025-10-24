@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskCoTgpt4o21.a CMakeFiles/taskCoTgpt4o21.dir/source/CoT/gpt4o/Task21.c.o
+/usr/bin/ar qc libtaskCoTgpt4o21.a CMakeFiles/taskCoTgpt4o21.dir/source/CoT/OPENAI/Task21.c.o
 /usr/bin/ranlib libtaskCoTgpt4o21.a

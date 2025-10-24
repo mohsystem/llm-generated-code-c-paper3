@@ -11,5 +11,8 @@
     <sourceRoots>
       <file path="$PROJECT_DIR$/source" />
     </sourceRoots>
+    <excludeRoots>
+      <file path="$PROJECT_DIR$/venv" />
+    </excludeRoots>
   </component>
 </project>

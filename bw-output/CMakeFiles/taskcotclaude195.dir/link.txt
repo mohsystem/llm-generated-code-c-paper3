@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskcotclaude195.a CMakeFiles/taskcotclaude195.dir/source/CoT/claude/Task195.c.o
+/usr/bin/ar qc libtaskcotclaude195.a CMakeFiles/taskcotclaude195.dir/source/CoT/CLAUDE/Task195.c.o
 /usr/bin/ranlib libtaskcotclaude195.a

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskCoTgpt4o41.dir/source/CoT/gpt4o/Task41.c.o"
-  "CMakeFiles/taskCoTgpt4o41.dir/source/CoT/gpt4o/Task41.c.o.d"
+  "CMakeFiles/taskCoTgpt4o41.dir/source/CoT/OPENAI/Task41.c.o"
+  "CMakeFiles/taskCoTgpt4o41.dir/source/CoT/OPENAI/Task41.c.o.d"
   "libtaskCoTgpt4o41.a"
   "libtaskCoTgpt4o41.pdb"
 )

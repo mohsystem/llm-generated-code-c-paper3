@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskCoTgemini72.a CMakeFiles/taskCoTgemini72.dir/source/CoT/gemini/Task72.c.o
+/usr/bin/ar qc libtaskCoTgemini72.a CMakeFiles/taskCoTgemini72.dir/source/CoT/GEMINI/Task72.c.o
 /usr/bin/ranlib libtaskCoTgemini72.a

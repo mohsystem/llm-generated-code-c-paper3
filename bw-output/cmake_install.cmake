@@ -1,4 +1,4 @@
-# Install script for directory: /home/kali/CLionProjects/llm_generated_code_c_paper2
+# Install script for directory: /home/kali/CLionProjects/llm_generated_code_c_paper3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

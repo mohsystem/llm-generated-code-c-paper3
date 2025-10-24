@@ -1,1 +1,0 @@
-//  C version implementation is similar to CPP, using winsock2.  Refer to the CPP implementation above.

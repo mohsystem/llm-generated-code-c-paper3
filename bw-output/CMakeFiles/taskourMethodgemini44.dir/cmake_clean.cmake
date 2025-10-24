@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskourMethodgemini44.dir/source/ourMethod/gemini/Task44.c.o"
-  "CMakeFiles/taskourMethodgemini44.dir/source/ourMethod/gemini/Task44.c.o.d"
+  "CMakeFiles/taskourMethodgemini44.dir/source/ourMethod/GEMINI/Task44.c.o"
+  "CMakeFiles/taskourMethodgemini44.dir/source/ourMethod/GEMINI/Task44.c.o.d"
   "libtaskourMethodgemini44.a"
   "libtaskourMethodgemini44.pdb"
 )

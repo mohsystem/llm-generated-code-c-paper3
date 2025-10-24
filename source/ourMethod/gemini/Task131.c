@@ -1,1 +1,0 @@
-//  C does not have a built-in serialization mechanism. Implementation would require a third-party library or custom serialization implementation.

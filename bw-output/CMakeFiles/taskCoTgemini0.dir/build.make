@@ -53,10 +53,10 @@ RM = /home/kali/workingDirectory/programs/clion-2024.1.4/bin/cmake/linux/x64/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2
+CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output
+CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output
 
 # Include any dependencies generated for this target.
 include CMakeFiles/taskCoTgemini0.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/taskCoTgemini0.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/taskCoTgemini0.dir/flags.make
 
-CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o: CMakeFiles/taskCoTgemini0.dir/flags.make
-CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/gemini/Task0.c
-CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o: CMakeFiles/taskCoTgemini0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o -MF CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o.d -o CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/gemini/Task0.c
+CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o: CMakeFiles/taskCoTgemini0.dir/flags.make
+CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/GEMINI/Task0.c
+CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o: CMakeFiles/taskCoTgemini0.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o -MF CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o.d -o CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/GEMINI/Task0.c
 
-CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/gemini/Task0.c > CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.i
+CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/GEMINI/Task0.c > CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.i
 
-CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper2/source/CoT/gemini/Task0.c -o CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.s
+CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper3/source/CoT/GEMINI/Task0.c -o CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.s
 
 # Object files for target taskCoTgemini0
 taskCoTgemini0_OBJECTS = \
-"CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o"
+"CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o"
 
 # External object files for target taskCoTgemini0
 taskCoTgemini0_EXTERNAL_OBJECTS =
 
-libtaskCoTgemini0.a: CMakeFiles/taskCoTgemini0.dir/source/CoT/gemini/Task0.c.o
+libtaskCoTgemini0.a: CMakeFiles/taskCoTgemini0.dir/source/CoT/GEMINI/Task0.c.o
 libtaskCoTgemini0.a: CMakeFiles/taskCoTgemini0.dir/build.make
 libtaskCoTgemini0.a: CMakeFiles/taskCoTgemini0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskCoTgemini0.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskCoTgemini0.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/taskCoTgemini0.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/taskCoTgemini0.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/taskCoTgemini0.dir/clean:
 .PHONY : CMakeFiles/taskCoTgemini0.dir/clean
 
 CMakeFiles/taskCoTgemini0.dir/depend:
-	cd /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles/taskCoTgemini0.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles/taskCoTgemini0.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/taskCoTgemini0.dir/depend
 

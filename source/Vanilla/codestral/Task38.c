@@ -1,1 +1,0 @@
-//C is not typically used for web applications, so it's not possible to provide a solution for this requirement in C.

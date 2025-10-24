@@ -53,10 +53,10 @@ RM = /home/kali/workingDirectory/programs/clion-2024.1.4/bin/cmake/linux/x64/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2
+CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output
+CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output
 
 # Include any dependencies generated for this target.
 include CMakeFiles/taskourMethodclaude149.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/taskourMethodclaude149.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/taskourMethodclaude149.dir/flags.make
 
-CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o: CMakeFiles/taskourMethodclaude149.dir/flags.make
-CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/claude/Task149.c
-CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o: CMakeFiles/taskourMethodclaude149.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o -MF CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o.d -o CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/claude/Task149.c
+CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o: CMakeFiles/taskourMethodclaude149.dir/flags.make
+CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/CLAUDE/Task149.c
+CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o: CMakeFiles/taskourMethodclaude149.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o -MF CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o.d -o CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/CLAUDE/Task149.c
 
-CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/claude/Task149.c > CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.i
+CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/CLAUDE/Task149.c > CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.i
 
-CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/claude/Task149.c -o CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.s
+CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/CLAUDE/Task149.c -o CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.s
 
 # Object files for target taskourMethodclaude149
 taskourMethodclaude149_OBJECTS = \
-"CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o"
+"CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o"
 
 # External object files for target taskourMethodclaude149
 taskourMethodclaude149_EXTERNAL_OBJECTS =
 
-libtaskourMethodclaude149.a: CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/claude/Task149.c.o
+libtaskourMethodclaude149.a: CMakeFiles/taskourMethodclaude149.dir/source/ourMethod/CLAUDE/Task149.c.o
 libtaskourMethodclaude149.a: CMakeFiles/taskourMethodclaude149.dir/build.make
 libtaskourMethodclaude149.a: CMakeFiles/taskourMethodclaude149.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskourMethodclaude149.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskourMethodclaude149.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/taskourMethodclaude149.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/taskourMethodclaude149.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/taskourMethodclaude149.dir/clean:
 .PHONY : CMakeFiles/taskourMethodclaude149.dir/clean
 
 CMakeFiles/taskourMethodclaude149.dir/depend:
-	cd /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles/taskourMethodclaude149.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles/taskourMethodclaude149.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/taskourMethodclaude149.dir/depend
 

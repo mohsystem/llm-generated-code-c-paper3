@@ -1,1 +1,0 @@
-// C standard library does not support zip file operations, so I cannot provide a C implementation.

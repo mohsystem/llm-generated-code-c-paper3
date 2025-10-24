@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskourMethodgpt4o177.a CMakeFiles/taskourMethodgpt4o177.dir/source/ourMethod/gpt4o/Task177.c.o
+/usr/bin/ar qc libtaskourMethodgpt4o177.a CMakeFiles/taskourMethodgpt4o177.dir/source/ourMethod/OPENAI/Task177.c.o
 /usr/bin/ranlib libtaskourMethodgpt4o177.a

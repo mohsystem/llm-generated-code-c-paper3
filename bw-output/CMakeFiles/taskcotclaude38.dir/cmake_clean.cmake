@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/taskcotclaude38.dir/source/CoT/claude/Task38.c.o"
-  "CMakeFiles/taskcotclaude38.dir/source/CoT/claude/Task38.c.o.d"
+  "CMakeFiles/taskcotclaude38.dir/source/CoT/CLAUDE/Task38.c.o"
+  "CMakeFiles/taskcotclaude38.dir/source/CoT/CLAUDE/Task38.c.o.d"
   "libtaskcotclaude38.a"
   "libtaskcotclaude38.pdb"
 )

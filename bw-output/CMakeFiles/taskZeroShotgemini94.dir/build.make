@@ -53,10 +53,10 @@ RM = /home/kali/workingDirectory/programs/clion-2024.1.4/bin/cmake/linux/x64/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2
+CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output
+CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output
 
 # Include any dependencies generated for this target.
 include CMakeFiles/taskZeroShotgemini94.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/taskZeroShotgemini94.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/taskZeroShotgemini94.dir/flags.make
 
-CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o: CMakeFiles/taskZeroShotgemini94.dir/flags.make
-CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ZeroShot/gemini/Task94.c
-CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o: CMakeFiles/taskZeroShotgemini94.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o -MF CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o.d -o CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ZeroShot/gemini/Task94.c
+CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o: CMakeFiles/taskZeroShotgemini94.dir/flags.make
+CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ZeroShot/GEMINI/Task94.c
+CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o: CMakeFiles/taskZeroShotgemini94.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o -MF CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o.d -o CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ZeroShot/GEMINI/Task94.c
 
-CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ZeroShot/gemini/Task94.c > CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.i
+CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ZeroShot/GEMINI/Task94.c > CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.i
 
-CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ZeroShot/gemini/Task94.c -o CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.s
+CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ZeroShot/GEMINI/Task94.c -o CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.s
 
 # Object files for target taskZeroShotgemini94
 taskZeroShotgemini94_OBJECTS = \
-"CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o"
+"CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o"
 
 # External object files for target taskZeroShotgemini94
 taskZeroShotgemini94_EXTERNAL_OBJECTS =
 
-libtaskZeroShotgemini94.a: CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/gemini/Task94.c.o
+libtaskZeroShotgemini94.a: CMakeFiles/taskZeroShotgemini94.dir/source/ZeroShot/GEMINI/Task94.c.o
 libtaskZeroShotgemini94.a: CMakeFiles/taskZeroShotgemini94.dir/build.make
 libtaskZeroShotgemini94.a: CMakeFiles/taskZeroShotgemini94.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskZeroShotgemini94.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskZeroShotgemini94.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/taskZeroShotgemini94.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/taskZeroShotgemini94.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/taskZeroShotgemini94.dir/clean:
 .PHONY : CMakeFiles/taskZeroShotgemini94.dir/clean
 
 CMakeFiles/taskZeroShotgemini94.dir/depend:
-	cd /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles/taskZeroShotgemini94.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles/taskZeroShotgemini94.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/taskZeroShotgemini94.dir/depend
 

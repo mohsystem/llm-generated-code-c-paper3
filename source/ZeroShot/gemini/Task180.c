@@ -1,2 +1,0 @@
-//  Not applicable in C, because it doesn't support HashMaps or similar data structures natively.
-//  Complex data structures like trees would require manual implementation using structs and pointers, which is beyond the scope of a concise code snippet.

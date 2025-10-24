@@ -1,2 +1,2 @@
-/usr/bin/ar qc libtaskZeroShotgemini53.a CMakeFiles/taskZeroShotgemini53.dir/source/ZeroShot/gemini/Task53.c.o
+/usr/bin/ar qc libtaskZeroShotgemini53.a CMakeFiles/taskZeroShotgemini53.dir/source/ZeroShot/GEMINI/Task53.c.o
 /usr/bin/ranlib libtaskZeroShotgemini53.a

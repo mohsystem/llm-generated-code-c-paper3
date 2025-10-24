@@ -1,2 +1,0 @@
-// XML-RPC server in C is complex and requires third-party libraries like xmlrpc-c which are not directly manageable in C standard
-// Therefore, implementing a complete XML-RPC server in C is not feasible within this simple snippet.

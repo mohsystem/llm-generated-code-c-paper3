@@ -1,4 +1,0 @@
-//  C version implementation is complex due to lack of built in map/dictionary and string manipulation functionalities. Would require significant external libraries or custom implementations.
-/*  Implementation in C is more complex due to the lack of built-in map/dictionary and robust string manipulation functionalities. 
-It would require implementing custom data structures (like a hash table for session management) and string handling functions, 
-which is beyond the scope of a concise code example.  Using external libraries could simplify this but is not ideal for a single-file demonstration.*/

@@ -53,10 +53,10 @@ RM = /home/kali/workingDirectory/programs/clion-2024.1.4/bin/cmake/linux/x64/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2
+CMAKE_SOURCE_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output
+CMAKE_BINARY_DIR = /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output
 
 # Include any dependencies generated for this target.
 include CMakeFiles/taskourMethodgemini54.dir/depend.make
@@ -69,31 +69,31 @@ include CMakeFiles/taskourMethodgemini54.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/taskourMethodgemini54.dir/flags.make
 
-CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o: CMakeFiles/taskourMethodgemini54.dir/flags.make
-CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/gemini/Task54.c
-CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o: CMakeFiles/taskourMethodgemini54.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o -MF CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o.d -o CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/gemini/Task54.c
+CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o: CMakeFiles/taskourMethodgemini54.dir/flags.make
+CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o: /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/GEMINI/Task54.c
+CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o: CMakeFiles/taskourMethodgemini54.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o -MF CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o.d -o CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o -c /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/GEMINI/Task54.c
 
-CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/gemini/Task54.c > CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.i
+CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/GEMINI/Task54.c > CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.i
 
-CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper2/source/ourMethod/gemini/Task54.c -o CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.s
+CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/CLionProjects/llm_generated_code_c_paper3/source/ourMethod/GEMINI/Task54.c -o CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.s
 
 # Object files for target taskourMethodgemini54
 taskourMethodgemini54_OBJECTS = \
-"CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o"
+"CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o"
 
 # External object files for target taskourMethodgemini54
 taskourMethodgemini54_EXTERNAL_OBJECTS =
 
-libtaskourMethodgemini54.a: CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/gemini/Task54.c.o
+libtaskourMethodgemini54.a: CMakeFiles/taskourMethodgemini54.dir/source/ourMethod/GEMINI/Task54.c.o
 libtaskourMethodgemini54.a: CMakeFiles/taskourMethodgemini54.dir/build.make
 libtaskourMethodgemini54.a: CMakeFiles/taskourMethodgemini54.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskourMethodgemini54.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libtaskourMethodgemini54.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/taskourMethodgemini54.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/taskourMethodgemini54.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/taskourMethodgemini54.dir/clean:
 .PHONY : CMakeFiles/taskourMethodgemini54.dir/clean
 
 CMakeFiles/taskourMethodgemini54.dir/depend:
-	cd /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2 /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper2/bw-output/CMakeFiles/taskourMethodgemini54.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3 /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output /home/kali/CLionProjects/llm_generated_code_c_paper3/bw-output/CMakeFiles/taskourMethodgemini54.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/taskourMethodgemini54.dir/depend
 

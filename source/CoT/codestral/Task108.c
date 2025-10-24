@@ -1,1 +1,0 @@
-// Not feasible to provide a complete solution in C due to the lack of built-in RMI-like functionality.
