@@ -1,0 +1,7 @@
+name: narrow-scan
+paths:
+  - source
+# optionally ignore test or generated code
+# paths-ignore:
+#   - src/test/**
+#   - "**/generated/**"
