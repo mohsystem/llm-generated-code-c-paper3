@@ -58,7 +58,7 @@ bool validate_string(const char* input, size_t max_len) {
     
     // Check for null bytes in the middle of string
     for (size_t i = 0; i < len; i++) {
-        if (input[i] == '\\0') {
+        if (input[i] == '\0') {
             return i == len;
         }
     }
@@ -77,7 +77,7 @@ void sanitize_string(char* dest, const char* src, size_t dest_size) {
     
     for (size_t i = 0; i < src_len && j < dest_size - 1; i++) {
         // Replace newlines and carriage returns with spaces
-        if (src[i] == '\\n' || src[i] == '\\r') {
+        if (src[i] == '\n' || src[i] == '\r') {
             dest[j++] = ' ';
         }
         // Only allow printable ASCII characters
@@ -86,7 +86,7 @@ void sanitize_string(char* dest, const char* src, size_t dest_size) {
         }
     }
     
-    dest[j] = '\\0';
+    dest[j] = '\0';
 }
 
 // Convert severity to string
@@ -274,11 +274,11 @@ int main(void) {
         .type = EVENT_LOGIN_SUCCESS
     };
     strncpy(event1.username, "admin", sizeof(event1.username) - 1);
-    event1.username[sizeof(event1.username) - 1] = '\\0';
+    event1.username[sizeof(event1.username) - 1] = '\0';
     strncpy(event1.ipAddress, "192.168.1.100", sizeof(event1.ipAddress) - 1);
-    event1.ipAddress[sizeof(event1.ipAddress) - 1] = '\\0';
+    event1.ipAddress[sizeof(event1.ipAddress) - 1] = '\0';
     strncpy(event1.description, "User logged in successfully", sizeof(event1.description) - 1);
-    event1.description[sizeof(event1.description) - 1] = '\\0';
+    event1.description[sizeof(event1.description) - 1] = '\0';
     
     if (log_event(log_path, &event1)) {
         printf("Test 1 passed: Login success logged\\n");
@@ -291,11 +291,11 @@ int main(void) {
         .type = EVENT_LOGIN_FAILURE
     };
     strncpy(event2.username, "admin", sizeof(event2.username) - 1);
-    event2.username[sizeof(event2.username) - 1] = '\\0';
+    event2.username[sizeof(event2.username) - 1] = '\0';
     strncpy(event2.ipAddress, "192.168.1.100", sizeof(event2.ipAddress) - 1);
-    event2.ipAddress[sizeof(event2.ipAddress) - 1] = '\\0';
+    event2.ipAddress[sizeof(event2.ipAddress) - 1] = '\0';
     strncpy(event2.description, "Invalid password", sizeof(event2.description) - 1);
-    event2.description[sizeof(event2.description) - 1] = '\\0';
+    event2.description[sizeof(event2.description) - 1] = '\0';
     
     if (log_event(log_path, &event2)) {
         printf("Test 2 passed: Login failure logged\\n");
@@ -309,11 +309,11 @@ int main(void) {
             .type = EVENT_LOGIN_FAILURE
         };
         strncpy(event.username, "testuser", sizeof(event.username) - 1);
-        event.username[sizeof(event.username) - 1] = '\\0';
+        event.username[sizeof(event.username) - 1] = '\0';
         strncpy(event.ipAddress, "10.0.0.50", sizeof(event.ipAddress) - 1);
-        event.ipAddress[sizeof(event.ipAddress) - 1] = '\\0';
+        event.ipAddress[sizeof(event.ipAddress) - 1] = '\0';
         strncpy(event.description, "Brute force detected", sizeof(event.description) - 1);
-        event.description[sizeof(event.description) - 1] = '\\0';
+        event.description[sizeof(event.description) - 1] = '\0';
         
         log_event(log_path, &event);
     }
@@ -326,11 +326,11 @@ int main(void) {
         .type = EVENT_UNAUTHORIZED_ACCESS
     };
     strncpy(event4.username, "guest", sizeof(event4.username) - 1);
-    event4.username[sizeof(event4.username) - 1] = '\\0';
+    event4.username[sizeof(event4.username) - 1] = '\0';
     strncpy(event4.ipAddress, "203.0.113.45", sizeof(event4.ipAddress) - 1);
-    event4.ipAddress[sizeof(event4.ipAddress) - 1] = '\\0';
+    event4.ipAddress[sizeof(event4.ipAddress) - 1] = '\0';
     strncpy(event4.description, "Unauthorized access attempt", sizeof(event4.description) - 1);
-    event4.description[sizeof(event4.description) - 1] = '\\0';
+    event4.description[sizeof(event4.description) - 1] = '\0';
     
     if (log_event(log_path, &event4)) {
         printf("Test 4 passed: Unauthorized access logged\\n");

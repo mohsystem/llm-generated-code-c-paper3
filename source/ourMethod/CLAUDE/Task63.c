@@ -171,7 +171,7 @@ static DecodedData* base64_decode(const char* encoded_string) {
     }
     
     result->size = out_idx;
-    result->data[out_idx] = '\\0'; // Null terminate for safety
+    result->data[out_idx] = '\0'; // Null terminate for safety
     
     return result;
 }

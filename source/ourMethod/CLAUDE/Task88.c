@@ -45,7 +45,7 @@ int generateRandomString(char* output, size_t length) {
     }
     
     /* Null-terminate the string */
-    output[length] = '\\0';
+    output[length] = '\0';
     
     return 0;
 }
@@ -70,7 +70,7 @@ char* convertToUnicode(const char* input) {
     
     /* Copy string (already UTF-8 compatible ASCII) with bounds check */
     memcpy(output, input, len);
-    output[len] = '\\0';
+    output[len] = '\0';
     
     return output;
 }

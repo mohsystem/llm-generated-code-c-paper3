@@ -55,7 +55,7 @@ static char* safe_strdup(const char* str, size_t max_len) {
     }
     
     memcpy(result, str, len);
-    result[len] = '\\0'; /* Ensure null termination */
+    result[len] = '\0'; /* Ensure null termination */
     return result;
 }
 /* Validate path to prevent directory traversal (CWE-22) */

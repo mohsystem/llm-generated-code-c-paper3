@@ -29,7 +29,7 @@ bool validate_email(const char* email) {
     
     // Security: Check for null bytes in middle of string (injection prevention)
     for (size_t i = 0; i < len; i++) {
-        if (email[i] == '\\0') {
+        if (email[i] == '\0') {
             return false;
         }
     }

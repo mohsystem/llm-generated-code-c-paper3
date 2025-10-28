@@ -97,7 +97,7 @@ bool addSubstring(SubstringSet* set, const char* str, size_t len) {
     
     // Safe copy with explicit bounds checking
     memcpy(set->substrings[set->count], str, len);
-    set->substrings[set->count][len] = '\\0';
+    set->substrings[set->count][len] = '\0';
     set->count++;
     
     return true;

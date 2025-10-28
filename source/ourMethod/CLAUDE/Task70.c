@@ -33,7 +33,7 @@ int validatePath(const char* path) {
     }
     
     /* Check for null bytes in path (injection attempt) */
-    if (memchr(path, '\\0', len) != path + len) {
+    if (memchr(path, '\0', len) != path + len) {
         return 0;
     }
     
@@ -49,7 +49,7 @@ int validatePath(const char* path) {
     
     /* Reject paths with null bytes */
     for (size_t i = 0; i < len; i++) {
-        if (path[i] == '\\0' && i < len - 1) {
+        if (path[i] == '\0' && i < len - 1) {
             return 0;
         }
     }
@@ -146,7 +146,7 @@ int readFileContent(const char* filepath, char** outContent, size_t* outSize) {
     }
     
     /* Ensure null termination */
-    buffer[fileSize] = '\\0';
+    buffer[fileSize] = '\0';
     
     /* Close file */
     if (fclose(file) != 0) {

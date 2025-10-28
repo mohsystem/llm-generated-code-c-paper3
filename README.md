@@ -1,9 +1,9 @@
 # Updated:
-# #This will do every thing and run sonarqube:
+# #This will do every thing, including sonarqube scan:
 ```
 ./runSonarQube.sh
 ```
-*******************************************
+** Old**************************
 
 
 Change the following in [compiler.py](compiler.py):

@@ -12,6 +12,8 @@
       <file path="$PROJECT_DIR$/source" />
     </sourceRoots>
     <excludeRoots>
+      <file path="$PROJECT_DIR$/.scannerwork" />
+      <file path="$PROJECT_DIR$/bw-output" />
       <file path="$PROJECT_DIR$/venv" />
     </excludeRoots>
   </component>

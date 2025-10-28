@@ -137,10 +137,10 @@ int jndi_bind(JNDIContext* ctx, const char* name, ResourceType type, const char*
         if (!ctx->resources[i].in_use) {
             /* Safe copy with bounds checking */
             strncpy(ctx->resources[i].name, name, MAX_NAME_LENGTH);
-            ctx->resources[i].name[MAX_NAME_LENGTH] = '\\0';
+            ctx->resources[i].name[MAX_NAME_LENGTH] = '\0';
             
             strncpy(ctx->resources[i].value, value, MAX_VALUE_LENGTH);
-            ctx->resources[i].value[MAX_VALUE_LENGTH] = '\\0';
+            ctx->resources[i].value[MAX_VALUE_LENGTH] = '\0';
             
             ctx->resources[i].type = type;
             ctx->resources[i].in_use = true;

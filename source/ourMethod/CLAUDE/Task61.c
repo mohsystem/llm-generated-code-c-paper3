@@ -20,8 +20,8 @@ static void secure_zero(void* ptr, size_t len) {
 // Skip whitespace characters safely with bounds checking
 static size_t skip_whitespace(const char* xml, size_t len, size_t pos) {
     if (xml == NULL) return pos;
-    while (pos < len && (xml[pos] == ' ' || xml[pos] == '\\t' || 
-                         xml[pos] == '\\n' || xml[pos] == '\\r')) {
+    while (pos < len && (xml[pos] == ' ' || xml[pos] == '\t' ||
+                         xml[pos] == '\n' || xml[pos] == '\r')) {
         pos++;
     }
     return pos;
@@ -191,7 +191,7 @@ char* get_root_element(const char* xml, char** error_msg) {
         char c = xml[pos];
         
         // Tag name ends at whitespace, '>', '/', or invalid character
-        if (c == ' ' || c == '\\t' || c == '\\n' || c == '\\r' || 
+        if (c == ' ' || c == '\t' || c == '\n' || c == '\r' ||
             c == '>' || c == '/') {
             break;
         }
@@ -233,7 +233,7 @@ char* get_root_element(const char* xml, char** error_msg) {
     
     // Copy tag name safely with explicit null termination
     memcpy(root_element, xml + tag_start, tag_length);
-    root_element[tag_length] = '\\0';
+    root_element[tag_length] = '\0';
     
     return root_element;
 }

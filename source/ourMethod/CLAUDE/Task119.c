@@ -188,7 +188,7 @@ static int csv_parse_line(const char *line, size_t line_len, CSVRow *row) {
                 } else if (c == ',') {
                     pos++;
                     break;
-                } else if (c == '\\r' || c == '\\n') {
+                } else if (c == '\r' || c == '\n') {
                     break;
                 } else {
                     field_buffer[field_pos++] = c;
@@ -207,7 +207,7 @@ static int csv_parse_line(const char *line, size_t line_len, CSVRow *row) {
         
         /* Security: Handle end of line */
         if (pos >= line_len) break;
-        if (line[pos] == '\\r' || line[pos] == '\\n') break;
+        if (line[pos] == '\r' || line[pos] == '\n') break;
     }
     
     return 0;
@@ -286,15 +286,15 @@ static int csv_process_file(const char *filename) {
         if (line_len == 0) continue;
         
         /* Security: Check if line was truncated (no newline and buffer full) */
-        if (line_len == MAX_LINE_SIZE - 1 && line_buffer[line_len - 1] != '\\n') {
+        if (line_len == MAX_LINE_SIZE - 1 && line_buffer[line_len - 1] != '\n') {
             fprintf(stderr, "Error: Line %zu exceeds maximum length\\n", row_num);
             result = -1;
             break;
         }
         
         /* Security: Remove trailing newline characters */
-        while (line_len > 0 && (line_buffer[line_len - 1] == '\\n' || 
-                                line_buffer[line_len - 1] == '\\r')) {
+        while (line_len > 0 && (line_buffer[line_len - 1] == '\n' ||
+                                line_buffer[line_len - 1] == '\r')) {
             line_buffer[--line_len] = '\0';
         }
         

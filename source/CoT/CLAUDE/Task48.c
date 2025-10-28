@@ -75,7 +75,7 @@ static bool validate_input(const char *input, size_t max_len) {
     /* Check length and character validity */
     while (input[len] != '\0') {
         /* Reject control characters except newline and tab */
-        if ((input[len] < 32 && input[len] != '\\n' && input[len] != '\\t') || 
+        if ((input[len] < 32 && input[len] != '\n' && input[len] != '\t') ||
             input[len] == 127) {
             return false;
         }

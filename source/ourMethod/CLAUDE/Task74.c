@@ -59,7 +59,7 @@ PGconn* createPostgresConnection(void) {
     /* Validate port is numeric and within valid range (Rules#1) */
     errno = 0;
     port_num = strtol(port, &endptr, 10);
-    if (errno != 0 || endptr == port || *endptr != '\\0' || 
+    if (errno != 0 || endptr == port || *endptr != '\0' ||
         port_num < 1 || port_num > 65535) {
         fprintf(stderr, "Error: Invalid port number\\n");
         return NULL;
@@ -127,7 +127,7 @@ int main(void) {
     original_host = getenv("PGHOST");
     if (original_host != NULL) {
         strncpy(saved_host, original_host, sizeof(saved_host) - 1);
-        saved_host[sizeof(saved_host) - 1] = '\\0';
+        saved_host[sizeof(saved_host) - 1] = '\0';
     }
     unsetenv("PGHOST");
     conn = createPostgresConnection();
@@ -138,7 +138,7 @@ int main(void) {
         PQfinish(conn);
         conn = NULL;
     }
-    if (saved_host[0] != '\\0') {
+    if (saved_host[0] != '\0') {
         setenv("PGHOST", saved_host, 1);
     }
     
@@ -147,7 +147,7 @@ int main(void) {
     original_port = getenv("PGPORT");
     if (original_port != NULL) {
         strncpy(saved_port, original_port, sizeof(saved_port) - 1);
-        saved_port[sizeof(saved_port) - 1] = '\\0';
+        saved_port[sizeof(saved_port) - 1] = '\0';
     }
     setenv("PGPORT", "invalid_port", 1);
     conn = createPostgresConnection();
@@ -158,7 +158,7 @@ int main(void) {
         PQfinish(conn);
         conn = NULL;
     }
-    if (saved_port[0] != '\\0') {
+    if (saved_port[0] != '\0') {
         setenv("PGPORT", saved_port, 1);
     }
     
@@ -173,7 +173,7 @@ int main(void) {
         PQfinish(conn);
         conn = NULL;
     }
-    if (saved_port[0] != '\\0') {
+    if (saved_port[0] != '\0') {
         setenv("PGPORT", saved_port, 1);
     }
     

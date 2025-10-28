@@ -151,7 +151,7 @@ static int generate_session_id(char* sessionId, size_t size) {
         sessionId[i * 2] = hex[(random_bytes[i] >> 4) & 0x0F];
         sessionId[i * 2 + 1] = hex[random_bytes[i] & 0x0F];
     }
-    sessionId[SESSION_ID_LENGTH] = '\\0';
+    sessionId[SESSION_ID_LENGTH] = '\0';
     
     secure_clear(random_bytes, sizeof(random_bytes));
     return 1;
@@ -228,10 +228,10 @@ char* create_session(SessionManager* manager, const char* userId, char* sessionI
     /* Add new session */
     SessionEntry* entry = &manager->entries[manager->count];
     strncpy(entry->sessionId, newSessionId, SESSION_ID_LENGTH + 1);
-    entry->sessionId[SESSION_ID_LENGTH] = '\\0';
+    entry->sessionId[SESSION_ID_LENGTH] = '\0';
     
     strncpy(entry->session.userId, userId, MAX_USER_ID_LENGTH);
-    entry->session.userId[MAX_USER_ID_LENGTH] = '\\0';
+    entry->session.userId[MAX_USER_ID_LENGTH] = '\0';
     entry->session.createdAt = now;
     entry->session.lastAccessedAt = now;
     entry->session.active = 1;
@@ -239,7 +239,7 @@ char* create_session(SessionManager* manager, const char* userId, char* sessionI
     manager->count++;
     
     strncpy(sessionIdOut, newSessionId, outSize);
-    sessionIdOut[SESSION_ID_LENGTH] = '\\0';
+    sessionIdOut[SESSION_ID_LENGTH] = '\0';
     return sessionIdOut;
 }
 
@@ -274,7 +274,7 @@ int validate_session(SessionManager* manager, const char* sessionId, char* userI
     entry->session.lastAccessedAt = now;
     
     strncpy(userIdOut, entry->session.userId, outSize - 1);
-    userIdOut[outSize - 1] = '\\0';
+    userIdOut[outSize - 1] = '\0';
     return 1;
 }
 

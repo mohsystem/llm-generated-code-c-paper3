@@ -79,7 +79,7 @@ static size_t write_callback(void* contents, size_t size, size_t nmemb, void* us
     // Security: Safe memory copy with bounds check
     memcpy(resp->data + resp->size, contents, total_size);
     resp->size += total_size;
-    resp->data[resp->size] = '\\0'; // Null terminate
+    resp->data[resp->size] = '\0'; // Null terminate
     
     return total_size;
 }
@@ -186,7 +186,7 @@ char* make_http_request(const char* url) {
         result = (char*)calloc(response->size + 1, sizeof(char));
         if (result != NULL) {
             memcpy(result, response->data, response->size);
-            result[response->size] = '\\0';
+            result[response->size] = '\0';
         }
     }
     

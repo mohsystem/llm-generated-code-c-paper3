@@ -197,7 +197,7 @@ int decrypt_data(const SecureObject *obj, const char *passphrase,
         decrypted_len += len;
         
         *plaintext_len = (size_t)decrypted_len;
-        plaintext[decrypted_len] = '\\0';
+        plaintext[decrypted_len] = '\0';
         success = 1;
     } while (0);
     
@@ -246,7 +246,7 @@ void init_server(SecureObjectServer *server, const char *passphrase) {
     }
     
     strncpy(server->server_passphrase, passphrase, sizeof(server->server_passphrase) - 1);
-    server->server_passphrase[sizeof(server->server_passphrase) - 1] = '\\0';
+    server->server_passphrase[sizeof(server->server_passphrase) - 1] = '\0';
     server->object_count = 0;
 }
 
@@ -310,7 +310,7 @@ void process_request(SecureObjectServer *server, const char *operation,
         }
         
         strncpy(obj->id, object_id, MAX_ID_LENGTH);
-        obj->id[MAX_ID_LENGTH] = '\\0';
+        obj->id[MAX_ID_LENGTH] = '\0';
         
         if (!encrypt_data(data != NULL ? data : "", data != NULL ? strlen(data) : 0,
                          server->server_passphrase, obj)) {

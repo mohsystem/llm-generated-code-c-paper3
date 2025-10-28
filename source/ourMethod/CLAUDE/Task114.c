@@ -44,7 +44,7 @@ char* copyString(const char* input) {
     
     // Security: Use memcpy with known bounds instead of strcpy
     memcpy(result, input, len);
-    result[len] = '\\0'; // Ensure null termination
+    result[len] = '\0'; // Ensure null termination
     
     return result;
 }
@@ -89,7 +89,7 @@ char* concatenateStrings(const char* str1, const char* str2) {
     // Security: Use memcpy with known bounds
     memcpy(result, str1, len1);
     memcpy(result + len1, str2, len2);
-    result[total_len] = '\\0'; // Ensure null termination
+    result[total_len] = '\0'; // Ensure null termination
     
     return result;
 }
@@ -120,7 +120,7 @@ char* reverseString(const char* input) {
     for (size_t i = 0; i < len; i++) {
         result[i] = input[len - 1 - i];
     }
-    result[len] = '\\0'; // Ensure null termination
+    result[len] = '\0'; // Ensure null termination
     
     return result;
 }
@@ -152,7 +152,7 @@ char* toUpperCase(const char* input) {
         // Cast to unsigned char to avoid undefined behavior with negative values
         result[i] = (char)toupper((unsigned char)input[i]);
     }
-    result[len] = '\\0'; // Ensure null termination
+    result[len] = '\0'; // Ensure null termination
     
     return result;
 }
