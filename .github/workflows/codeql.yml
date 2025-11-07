@@ -23,21 +23,24 @@ jobs:
       matrix:
         include:
           - language: c-cpp
-            build-mode: manual   # switched from autobuild to manual
+            build-mode: manual
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive   # if you use submodules
+          submodules: recursive
 
       - name: Install build deps
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            build-essential cmake pkg-config ninja-build \
-            # add any library dev packages you need, for example:
-            # libssl-dev zlib1g-dev libuv1-dev
+            build-essential \
+            cmake \
+            pkg-config \
+            ninja-build \
+            libcurl4-openssl-dev \
+            libxml2-dev
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4
@@ -45,12 +48,10 @@ jobs:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
 
-      # Run your normal build while CodeQL traces it
       - name: Configure and build (CMake)
         run: |
-          cmake -S . -B build -G Ninja \
-            -DCMAKE_BUILD_TYPE=Release
-          cmake --build build --config Release -j$(nproc)
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release -j"$(nproc)"
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
