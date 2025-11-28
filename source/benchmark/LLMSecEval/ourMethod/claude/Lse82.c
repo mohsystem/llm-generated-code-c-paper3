@@ -2,276 +2,201 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
+#include <microhttpd.h>
+#include <json-c/json.h>
 
-/* Security: Maximum payload size to prevent DoS attacks */
-#define MAX_PAYLOAD_SIZE 10240
-#define MAX_NAME_SIZE 1024
+/* Maximum payload size to prevent DoS attacks */
+#define MAX_PAYLOAD_SIZE 4096
+/* Maximum name field length */
+#define MAX_NAME_LENGTH 256
 
-/* Security: Safe string operations with bounds checking */
-typedef struct {
-    char* data;
-    size_t length;
-    size_t capacity;
-} SafeString;
+/*
+ * Security: Safely extract name from JSON payload
+ * - Validates JSON structure
+ * - Checks for "name" field existence
+ * - Bounds checking on output
+ * - Returns NULL on any validation failure
+ */
+static char* extract_name_from_payload(const char* payload_str) {
+    char *result = NULL;
+    struct json_object *parsed_json = NULL;
+    struct json_object *name_obj = NULL;
 
-/* Security: Initialize SafeString with size validation */
-SafeString* safestring_create(size_t initial_capacity) {
-    if (initial_capacity == 0 || initial_capacity > MAX_PAYLOAD_SIZE) {
-        return NULL;
-    }
-    
-    SafeString* str = (SafeString*)malloc(sizeof(SafeString));
-    if (str == NULL) {
-        return NULL;
-    }
-    
-    str->data = (char*)calloc(initial_capacity + 1, sizeof(char));
-    if (str->data == NULL) {
-        free(str);
-        return NULL;
-    }
-    
-    str->length = 0;
-    str->capacity = initial_capacity;
-    return str;
-}
-
-/* Security: Safe cleanup of SafeString */
-void safestring_destroy(SafeString* str) {
-    if (str != NULL) {
-        if (str->data != NULL) {
-            /* Security: Clear memory before free to prevent data leakage */
-            memset(str->data, 0, str->capacity + 1);
-            free(str->data);
-        }
-        free(str);
-    }
-}
-
-/* Security: Safe character append with bounds checking */
-int safestring_append_char(SafeString* str, char c) {
-    if (str == NULL || str->data == NULL) {
-        return 0;
-    }
-    
-    /* Security: Check bounds before writing */
-    if (str->length >= str->capacity) {
-        return 0;
-    }
-    
-    str->data[str->length++] = c;
-    str->data[str->length] = '\0';
-    return 1;
-}
-/* Security: Escape special JSON characters to prevent injection */
-char* escape_json_string(const char* input) {
-    if (input == NULL) {
+    /* Security: Validate input pointer */
+    if (payload_str == NULL || strlen(payload_str) == 0) {
         return NULL;
     }
 
-    size_t input_len = strlen(input);
-    if (input_len > MAX_NAME_SIZE) {
+    /* Security: Validate payload size before parsing */
+    size_t len = strlen(payload_str);
+    if (len > MAX_PAYLOAD_SIZE) {
         return NULL;
     }
 
-    /* Security: Allocate buffer with size validation */
-    SafeString* output = safestring_create(input_len * 2);
-    if (output == NULL) {
+    /* Security: Use safe JSON parser (json-c), not eval or unsafe deserialization */
+    parsed_json = json_tokener_parse(payload_str);
+    if (parsed_json == NULL) {
         return NULL;
     }
 
-    /* Security: Process each character safely with bounds checking */
-    for (size_t i = 0; i < input_len; i++) {
-        char c = input[i];
-        switch (c) {
-            case '\\':
-                if (!safestring_append_char(output, '\\') ||
-                    !safestring_append_char(output, '\\')) {
-                    safestring_destroy(output);
-                    return NULL;
-                }
-                break;
-            case '"':
-                if (!safestring_append_char(output, '\\') ||
-                    !safestring_append_char(output, '"')) {
-                    safestring_destroy(output);
-                    return NULL;
-                }
-                break;
-            case '\n':
-                if (!safestring_append_char(output, '\\') ||
-                    !safestring_append_char(output, 'n')) {
-                    safestring_destroy(output);
-                    return NULL;
-                }
-                break;
-            case '\r':
-                if (!safestring_append_char(output, '\\') ||
-                    !safestring_append_char(output, 'r')) {
-                    safestring_destroy(output);
-                    return NULL;
-                }
-                break;
-            case '\t':
-                if (!safestring_append_char(output, '\\') ||
-                    !safestring_append_char(output, 't')) {
-                    safestring_destroy(output);
-                    return NULL;
-                }
-                break;
-            default:
-                if (!safestring_append_char(output, c)) {
-                    safestring_destroy(output);
-                    return NULL;
-                }
-                break;
-        }
+    /* Security: Validate that parsed object is actually a JSON object */
+    if (!json_object_is_type(parsed_json, json_type_object)) {
+        json_object_put(parsed_json);
+        return NULL;
     }
 
-    /* Security: Duplicate string safely before destroying SafeString */
-    char* result = strdup(output->data);
-    safestring_destroy(output);
+    /* Security: Safely check for "name" field existence */
+    if (!json_object_object_get_ex(parsed_json, "name", &name_obj)) {
+        json_object_put(parsed_json);
+        return NULL;
+    }
+
+    /* Security: Validate that name field is a string */
+    if (!json_object_is_type(name_obj, json_type_string)) {
+        json_object_put(parsed_json);
+        return NULL;
+    }
+
+    const char *name_str = json_object_get_string(name_obj);
+
+    /* Security: Validate name string and enforce length limit */
+    if (name_str == NULL || strlen(name_str) >= MAX_NAME_LENGTH) {
+        json_object_put(parsed_json);
+        return NULL;
+    }
+
+    /* Security: Allocate buffer with explicit size and check result */
+    result = (char*)calloc(MAX_NAME_LENGTH, sizeof(char));
+    if (result == NULL) {
+        json_object_put(parsed_json);
+        return NULL;
+    }
+
+    /* Security: Use bounded copy with explicit size */
+    snprintf(result, MAX_NAME_LENGTH, "%s", name_str);
+
+    /* Cleanup: Release JSON object */
+    json_object_put(parsed_json);
+
     return result;
 }
 
-/* Security: Extract name from JSON payload with safe parsing */
-char* extract_name_from_json(const char* payload) {
+/*
+ * HTTP request handler for /api endpoint
+ * Security: Validates all inputs and returns generic errors
+ */
+static enum MHD_Result answer_to_connection(void *cls, struct MHD_Connection *connection,
+                                           const char *url, const char *method,
+                                           const char *version, const char *upload_data,
+                                           size_t *upload_data_size, void **con_cls) {
+    struct MHD_Response *response = NULL;
+    enum MHD_Result ret;
+    int status_code = MHD_HTTP_OK;
+    char *response_text = NULL;
+
+    (void)cls; (void)version; (void)upload_data; (void)upload_data_size; (void)con_cls;
+
+    /* Security: Only accept GET requests */
+    if (strcmp(method, "GET") != 0) {
+        response_text = strdup("Method not allowed");
+        status_code = MHD_HTTP_METHOD_NOT_ALLOWED;
+        goto send_response;
+    }
+
+    /* Security: Only handle /api route */
+    if (strcmp(url, "/api") != 0) {
+        response_text = strdup("Not found");
+        status_code = MHD_HTTP_NOT_FOUND;
+        goto send_response;
+    }
+
+    /* Security: Get payload parameter safely */
+    const char *payload = MHD_lookup_connection_value(connection, MHD_GET_ARGUMENT_KIND, "payload");
+
+    /* Security: Validate payload parameter exists */
     if (payload == NULL) {
-        return NULL;
+        response_text = strdup("{\"error\":\"Missing payload parameter\"}");
+        status_code = MHD_HTTP_BAD_REQUEST;
+        goto send_response;
     }
 
-    /* Security: Find "name" key safely with bounds checking */
-    const char* name_key = strstr(payload, "\"name\"");
-    if (name_key == NULL) {
-        return NULL;
-    }
-
-    /* Security: Find the colon after "name" */
-    const char* colon = strchr(name_key, ':');
-    if (colon == NULL) {
-        return NULL;
-    }
-
-    /* Security: Skip whitespace and find opening quote */
-    const char* ptr = colon + 1;
-    while (*ptr && isspace((unsigned char) *ptr)) {
-        ptr++;
-    }
-
-    if (*ptr != '"') {
-        return NULL;
-    }
-    ptr++; /* Skip opening quote */
-
-    /* Security: Extract value with length validation */
-    const char* value_start = ptr;
-    size_t value_len = 0;
-
-    while (*ptr && *ptr != '"' && value_len < MAX_NAME_SIZE) {
-        if (*ptr == '\\' && *(ptr + 1)) {
-            ptr++; /* Skip escape character */
-        }
-        ptr++;
-        value_len++;
-    }
-
-    if (*ptr != '"' || value_len == 0 || value_len >= MAX_NAME_SIZE) {
-        return NULL;
-    }
-
-    /* Security: Allocate and copy with size validation */
-    char* name = (char*) malloc(value_len + 1);
+    /* Security: Extract name with full validation */
+    char *name = extract_name_from_payload(payload);
     if (name == NULL) {
-        return NULL;
+        /* Security: Generic error message, no internal details leaked */
+        response_text = strdup("{\"error\":\"Invalid payload format\"}");
+        status_code = MHD_HTTP_BAD_REQUEST;
+        goto send_response;
     }
 
-    /* Security: Use safe string copy with explicit size */
-    memcpy(name, value_start, value_len);
-    name[value_len] = '\0';
-
-    return name;
-}
-
-/* Security: Process payload with comprehensive input validation */
-char* process_payload(const char* payload) {
-    /* Security: Validate input is not NULL and within size limits */
-    if (payload == NULL) {
-        return strdup("{\"error\":\"Invalid input\"}");
+    /* Security: Allocate response buffer with explicit size check */
+    size_t response_size = strlen(name) + 64;
+    response_text = (char*)calloc(response_size, sizeof(char));
+    if (response_text == NULL) {
+        free(name);
+        response_text = strdup("{\"error\":\"Internal error\"}");
+        status_code = MHD_HTTP_INTERNAL_SERVER_ERROR;
+        goto send_response;
     }
 
-    size_t payload_len = strlen(payload);
-    if (payload_len == 0) {
-        return strdup("{\"error\":\"Invalid input\"}");
-    }
+    /* Security: Use snprintf with explicit bound and constant format string */
+    snprintf(response_text, response_size, "{\"name\":\"%s\"}", name);
 
-    if (payload_len > MAX_PAYLOAD_SIZE) {
-        return strdup("{\"error\":\"Payload too large\"}");
-    }
-
-    /* Security: Extract name safely with bounds checking */
-    char* name = extract_name_from_json(payload);
-    if (name == NULL) {
-        return strdup("{\"error\":\"Missing name field\"}");
-    }
-
-    /* Security: Escape name for safe JSON output */
-    char* escaped_name = escape_json_string(name);
-
-    /* Security: Clear and free original name */
-    memset(name, 0, strlen(name));
+    /* Cleanup: Free allocated name buffer */
     free(name);
 
-    if (escaped_name == NULL) {
-        return strdup("{\"error\":\"Processing error\"}");
+send_response:
+    /* Security: Ensure response_text is never NULL */
+    if (response_text == NULL) {
+        response_text = strdup("{\"error\":\"Internal error\"}");
+        status_code = MHD_HTTP_INTERNAL_SERVER_ERROR;
     }
 
-    /* Security: Build result with size validation */
-    size_t result_size = strlen(escaped_name) + 32;
-    char* result = (char*) malloc(result_size);
-    if (result == NULL) {
-        memset(escaped_name, 0, strlen(escaped_name));
-        free(escaped_name);
-        return strdup("{\"error\":\"Memory error\"}");
+    /* Create and send response */
+    response = MHD_create_response_from_buffer(strlen(response_text),
+                                               (void*)response_text,
+                                               MHD_RESPMEM_MUST_FREE);
+
+    /* Security: Check response creation succeeded */
+    if (response == NULL) {
+        free(response_text);
+        return MHD_NO;
     }
 
-    /* Security: Use snprintf for safe string formatting */
-    snprintf(result, result_size, "{\"name\":\"%s\"}", escaped_name);
+    /* Add content type header */
+    MHD_add_response_header(response, "Content-Type", "application/json");
 
-    /* Security: Clear and free escaped name */
-    memset(escaped_name, 0, strlen(escaped_name));
-    free(escaped_name);
+    ret = MHD_queue_response(connection, status_code, response);
+    MHD_destroy_response(response);
 
-    return result;
+    return ret;
 }
 
 int main(void) {
-    printf("Web API simulation (C version)\\n");
-    printf("Note: C doesn't have built-in HTTP server.\\n");
-    printf("This demonstrates the payload processing logic.\\n\\n");
-    
+    struct MHD_Daemon *daemon;
+
     /* Test cases */
-    printf("Test cases:\\n");
-    
-    char* result1 = process_payload("{\"name\":\"John\"}");
-    printf("1. Valid JSON: %s\\n", result1);
-    free(result1);
-    
-    char* result2 = process_payload("{\"name\":\"O'Brien\"}");
-    printf("2. Valid JSON with special chars: %s\\n", result2);
-    free(result2);
-    
-    char* result3 = process_payload("{\"age\":30}");
-    printf("3. Missing name field: %s\\n", result3);
-    free(result3);
-    
-    char* result4 = process_payload("{invalid}");
-    printf("4. Invalid JSON: %s\\n", result4);
-    free(result4);
-    
-    char* result5 = process_payload(NULL);
-    printf("5. NULL payload: %s\\n", result5);
-    free(result5);
-    
-    return 0;
+    printf("Starting web server on port 8888...\\n");
+    printf("Test with:\\n");
+    printf("1. curl 'http://localhost:8888/api?payload={\"name\":\"Alice\"}'\\n");
+    printf("2. curl 'http://localhost:8888/api?payload={\"name\":\"Bob123\"}'\\n");
+    printf("3. curl 'http://localhost:8888/api?payload={\"name\":\"\"}'\\n");
+    printf("4. curl 'http://localhost:8888/api?payload={\"invalid\":\"data\"}'\\n");
+    printf("5. curl 'http://localhost:8888/api?payload=notjson'\\n");
+
+    /* Security: Start daemon with minimal privileges */
+    daemon = MHD_start_daemon(MHD_USE_INTERNAL_POLLING_THREAD, 8888, NULL, NULL,
+                             &answer_to_connection, NULL, MHD_OPTION_END);
+
+    /* Security: Check daemon creation succeeded */
+    if (daemon == NULL) {
+        fprintf(stderr, "Failed to start server\\n");
+        return EXIT_FAILURE;
+    }
+
+    printf("Server started. Press Enter to stop.\\n");
+    (void)getchar();
+
+    MHD_stop_daemon(daemon);
+    return EXIT_SUCCESS;
 }
